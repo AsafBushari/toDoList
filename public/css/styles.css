@@ -1,0 +1,76 @@
+body{
+  font-family: Rubik;
+  margin: 0;
+  background-color: #E4E9FD;
+ background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+}
+li{
+    border-bottom: 1px solid black;
+}
+hr {
+    border: unset;
+    border-bottom: 0.5px solid #80808038;
+}
+button{
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #A683E3;
+  color: white;
+  border: unset;
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
+#body-container {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 100%;
+    grid-row-gap: 45px;
+}
+#main-container{
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 100vh;
+}
+#content-container {
+    align-self: flex-start;
+    box-shadow: 2px 3px 10px 0px #00000057;
+    background-color: white;
+    padding: 20px 0;
+    font-size: 22px;
+    border-radius: 5px;
+
+}
+form input{
+  text-align: center;
+}
+
+#title-container {
+    align-self: end;
+    justify-self: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #A683E3;
+    padding: 0 60px;
+    box-shadow: 2px 3px 10px 0px #00000057;
+}
+#title-container > div {
+    text-align: center;
+}
+.items{
+  display: inline;
+}
+input[type=checkbox] + p {
+  display: inline;
+}
+input[type=checkbox]:checked + p {
+  text-decoration: line-through #A683E3;
+}
+input[type=text]{
+  border: unset;
+  outline: none;
+  font-size: 22px;
+}

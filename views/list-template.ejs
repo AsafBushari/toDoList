@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>todo list</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="body-container">
+        <div id="title-container">
+          <div>
+            <h1><%= test %></h1>
+            <p><%= date %></p>
+          </div>
+        </div>
+        <div id="content-container">
+          <div>
+              <% for(var i = 0; i < items.length; i++){ %>
+                <input type="checkbox" style="margin: 0 15px;">
+                <p><%= items[i] %></p>
+                <br>
+                <hr style="margin-top: 20px; margin-bottom: 20px;">
+
+              <% } %>
+
+            <form  action="/" method="post">
+              <input type="text" name="list_value" placeholder="New Item" autocomplete="off" required>
+              <button type="submit" name="button">+</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
