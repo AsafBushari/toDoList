@@ -25,6 +25,6 @@ app.post('/', function(req, res){
   res.redirect("/");
 });
 
-app.listen(3000, function(){
+app.listen(3000 || process.env.PORT, function(){
 	console.log('i am listening....')
 });
